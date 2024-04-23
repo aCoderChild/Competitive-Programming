@@ -10,9 +10,9 @@ int main() {
     cin >> testcase;
 
     while (testcase--) {
-        int n;
+        ull n;
         cin >> n;
-        cout <<  (ull) floor((sqrt(4+8*n) - 1) / 2) << endl;
+        cout <<  (ull) floor((sqrt(1+8*n) - 1) / 2) << endl;
     }
 
     return 0;
