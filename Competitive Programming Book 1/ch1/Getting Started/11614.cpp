@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+#define ull long unsigned int
 
 int main() {
     ios::sync_with_stdio(false);
@@ -11,17 +12,7 @@ int main() {
     while (testcase--) {
         int n;
         cin >> n;
-        int row = 0;
-        int i = 1;
-        int num = 0;
-        while (i) {
-            num += i;
-            if (num > n) break;
-            row ++;
-            i++;
-        }
-
-        cout << row << endl;
+        cout <<  (ull) floor((sqrt(4+8*n) - 1) / 2) << endl;
     }
 
     return 0;
